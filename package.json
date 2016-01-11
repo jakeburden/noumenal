@@ -9,6 +9,11 @@
   "author": "Jacob Burden",
   "license": "MIT",
   "dependencies": {
-    "patterns": "^1.0.2"
+    "hyperstream": "^1.2.2",
+    "oppressor": "0.0.1",
+    "patterns": "^1.0.2",
+    "st": "^1.1.0",
+    "virtual-dom": "^2.1.1",
+    "virtual-dom-stream": "^1.0.1"
   }
 }
