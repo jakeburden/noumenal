@@ -8,9 +8,10 @@ const serve = st({
 const render = require('./server/render')
 const trees = require('./server/trees')
 
-routes.add('GET /', render(trees.home))
-routes.add('GET /content', render(trees.content))
-routes.add('GET /developer', render(trees.developer))
+routes.add('GET /', render(trees.site.home))
+routes.add('GET /app', render(trees.app.home))
+routes.add('GET /content', render(trees.app.content))
+routes.add('GET /developer', render(trees.app.developer))
 
 const server = http.createServer((req, res) => {
   const m = routes.match(req.method + ' ' + req.url)
